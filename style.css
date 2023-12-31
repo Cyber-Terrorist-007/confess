@@ -1,0 +1,398 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Bellota:ital,wght@1,700&display=swap');
+body {
+  background-color: #1a3142;
+  margin: 0 auto;
+  max-width: 85%;
+  
+}
+.kontener{
+margin: 100px auto;
+}
+
+svg {
+  border: 10px solid white;
+  border-bottom-width: 30px;
+}
+@media only screen and (max-width:480px){
+ svg {
+  border: 2px solid white;
+  border-bottom-width: 8px;
+  }
+}
+
+.st4 {
+  fill: #f9e39a;
+}
+
+.st5 {
+  fill: #f8f3dc;
+}
+
+.st6 {
+  fill: #14192e;
+}
+
+.st7, .st8 {
+  fill: #f8f3dc;
+  stroke: #14192e;
+  stroke-width: 2;
+  stroke-miterlimit: 10;
+}
+
+.st8 {
+  fill: #fa3757;
+}
+
+.st10 {
+  fill: #fecb2f;
+}
+
+.st12 {
+  fill: none;
+  stroke: #14192e;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.st12, .st14, .st17, .st18, .st19 {
+  stroke-width: 2;
+  stroke-miterlimit: 10;
+}
+
+.st14 {
+  fill: none;
+  stroke: #fecb2f;
+}
+
+.st17, .st18, .st19 {
+  stroke: #14192e;
+}
+
+.st17 {
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  fill: #f8f3dc;
+}
+
+.st18, .st19 {
+  fill: #69b3b2;
+}
+
+.st19 {
+  fill: none;
+  stroke: #f8f3dc;
+}
+
+.st23 {
+  fill: #cfb0a4;
+}
+
+
+@keyframes textanim {
+  to {
+    opacity: 1;
+  }
+}
+#nave, #nube2, #nube1 {
+  transform: translateX(-100%);
+  animation: moveHorizontal 17s -1.5s linear 1;
+}
+
+#nube2 {
+  animation-duration: 80s;
+  animation-delay: -20s;
+}
+
+#nube1 {
+  animation-duration: 70s;
+}
+
+@keyframes moveHorizontal {
+  to {
+    transform: translateX(100%);
+  }
+}
+.humo {
+  transform: scale(0);
+  transform-origin: center;
+  transform-box: fill-box;
+  opacity: 0;
+}
+
+.humo:nth-of-type(1) {
+  animation: 5s 0.5s opacityLoader 1 forwards;
+}
+
+.humo:nth-of-type(2) {
+  animation: 5s 1s opacityLoader 1 forwards;
+}
+
+.humo:nth-of-type(3) {
+  animation: 5s 1.5s opacityLoader 1 forwards;
+}
+
+.humo:nth-of-type(4) {
+  animation: 5s 2s opacityLoader 1 forwards;
+}
+
+.humo:nth-of-type(5) {
+  animation: 5s 2.5s opacityLoader 1 forwards;
+}
+
+.humo:nth-of-type(6) {
+  animation: 5s 3s opacityLoader 1 forwards;
+}
+
+.humo:nth-of-type(7) {
+  animation: 5s 3.5s opacityLoader 1 forwards;
+}
+
+.humo:nth-of-type(8) {
+  animation: 5s 4s opacityLoader 1 forwards;
+}
+
+.humo:nth-of-type(9) {
+  animation: 5s 4.5s opacityLoader 1 forwards;
+}
+
+.humo:nth-of-type(10) {
+  animation: 5s 5s opacityLoader 1 forwards;
+}
+
+.humo:nth-of-type(11) {
+  animation: 5s 5.5s opacityLoader 1 forwards;
+}
+
+.humo:nth-of-type(12) {
+  animation: 5s 6s opacityLoader 1 forwards;
+}
+
+.humo:nth-of-type(13) {
+  animation: 5s 6.5s opacityLoader 1 forwards;
+}
+
+@keyframes opacityLoader {
+  to {
+    transform: scale(5);
+    opacity: .4;
+  }
+}
+#sol {
+  animation: rotationHalf 30s linear 5;
+}
+
+@keyframes rotationHalf {
+  to {
+    transform: rotate(-60deg);
+  }
+}
+html {
+  background: -moz-linear-gradient(top, #241d33 0%, #171930 51%, #091119 100%);
+ /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #241d33), color-stop(51%, #171930), color-stop(100%, #091119));
+ /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #241d33 0%, #171930 51%, #091119 100%);
+ /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #241d33 0%, #171930 51%, #091119 100%);
+ /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #241d33 0%, #171930 51%, #091119 100%);
+ /* IE10+ */
+  background: linear-gradient(to bottom, #241d33 0%, #171930 51%, #091119 100%);
+ /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#241d33', endColorstr='#091119', GradientType=0);
+ /* IE6-9 */
+  height: 100%;
+  /* overflow: hidden; */
+}
+body {
+  height: 100%;
+  background-color: #1a3142;
+  margin: 0 auto;
+  max-width: 85%;
+}
+#new-year {
+  position: relative;
+  top: 50%;
+  width: 90%;
+  height: 90%;
+  margin: 0 auto 0 auto;
+  transform: translateY(-50%);
+}
+#new-year svg {
+  width: 100%;
+  height: 100%;
+}
+.stroke-fill {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  stroke: #fa3757;
+}
+#happy-stroke {
+  animation: happy-dash 1.7s linear normal forwards;
+  animation-delay: 10s;
+}
+#n-stroke {
+  animation: dash 2s 1.8s linear normal forwards;
+  animation-delay: 11.8s;
+}
+#ew-stroke {
+  animation: dash 2s 2.5s linear normal forwards;
+  animation-delay: 12.4s;
+}
+#y-stroke {
+  animation: dash 2s 3.3s linear normal forwards;
+  animation-delay: 13.3s;
+}
+#ye-stroke {
+  animation: dash 1s 4s linear normal forwards;
+  animation-delay: 14s;
+}
+#ear-stroke {
+  animation: dash 2s 4.18s linear normal forwards;
+  animation-delay: 14s;
+}
+#underline-stroke {
+  animation: dash 0.5s 5.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) normal forwards;
+
+  animation-delay: 15s;
+}
+@keyframes dash {
+  0% {
+      stroke-dashoffset: 1000;
+ }
+  100% {
+      stroke-dashoffset: 0;
+ }
+}
+@keyframes happy-dash {
+  0% {
+      stroke-dashoffset: 1000;
+ }
+  6% {
+      stroke-dashoffset: 976;
+ }
+  6.01% {
+      stroke-dashoffset: 958;
+ }
+  13% {
+      stroke-dashoffset: 936;
+ }
+  13.01% {
+      stroke-dashoffset: 905;
+ }
+  20% {
+      stroke-dashoffset: 896;
+ }
+  20.01% {
+      stroke-dashoffset: 864;
+ }
+  27% {
+      stroke-dashoffset: 840;
+ }
+  27.01% {
+      stroke-dashoffset: 830;
+ }
+  34% {
+      stroke-dashoffset: 808;
+ }
+  34.01% {
+      stroke-dashoffset: 775;
+ }
+  40% {
+      stroke-dashoffset: 764;
+ }
+  40.01% {
+      stroke-dashoffset: 738;
+ }
+  60% {
+      stroke-dashoffset: 688;
+ }
+  60.01% {
+      stroke-dashoffset: 658;
+ }
+  80% {
+      stroke-dashoffset: 610;
+ }
+  80.01% {
+      stroke-dashoffset: 580;
+ }
+  90% {
+      stroke-dashoffset: 555;
+ }
+  90.01% {
+      stroke-dashoffset: 543;
+ }
+  99.99% {
+      stroke-dashoffset: 525;
+ }
+  100% {
+      stroke-dashoffset: 0;
+ }
+}
+
+
+
+
+
+
+
+.btn {
+  height: 4em;
+  width: 12em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  border: 0px solid black;
+  animation-delay: 15s;
+}
+
+/* Initially hide the button */
+.btn { 
+  opacity: 0;
+}
+
+/* Define a keyframes rule to show the button after 15 seconds */
+@keyframes showButton {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.btn {
+  font-size: 2.5rem;
+  padding: 1rem 2.5rem;
+  font-family: Bellota;
+  font-weight: bolder;
+  border: none;
+  outline: none;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  text-transform: uppercase;
+  background-color: rgb(14, 14, 26);
+  color: rgb(234, 234, 234);
+  font-weight: 700;
+  transition: 0.6s;
+  box-shadow: 0px 0px 60px #1f4c65;
+  -webkit-box-reflect: below 10px linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,0.4));
+  animation: showButton 5s linear 10s forwards;
+  animation-delay: 15.5s;
+}
+
+
+.btn:active {
+  scale: 0.92;
+}
+
+.btn:hover {
+  background: rgb(2,29,78);
+  background: linear-gradient(270deg, #fa3757 0%, #f8f3dc 60%);
+  color: rgb(4, 4, 38);
+}
+a{
+  text-decoration: none;
+}
