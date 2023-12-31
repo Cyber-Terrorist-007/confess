@@ -296,7 +296,7 @@ body {
 .greet-message {
   color: aliceblue;
   z-index: 60;
-  font-size: 1.26em;
+  font-size: 1.05vw;
   font-weight: bolder;
   margin: 3%;
   margin-left: 11%;
